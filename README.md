@@ -7,7 +7,7 @@
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contributors](#contributing)
-- [Contact](#contact)
+- [Contacts](#contact)
 ## Overview
 An advanced, feature-rich Inventory Management Web Application built with a modern tech stack to manage, organize, and monitor inventory efficiently. This application leverages Next.js for the frontend and Node.js for the backend, with seamless integrations for storage, APIs, and cloud hosting.
 
@@ -46,24 +46,24 @@ An advanced, feature-rich Inventory Management Web Application built with a mode
    - Install dependencies: npm install
    - Set up the environment variables
    - Create .env files for both the server and frontend
-   - Server .env
+   - Server ".env":
    - DATABASE_URL=postgresql://username:password@aws-rds-endpoint:5432/database_name
    - AWS_ACCESS_KEY_ID=your-access-key
    - AWS_SECRET_ACCESS_KEY=your-secret-key
    - AWS_REGION=your-region
-   - Client .env.local
+   - Client ".env.local":
    - NEXT_PUBLIC_API_BASE_URL=https://your-api-gateway-endpoint
    - Initialize Prisma: prisma migrate dev --name init
    - Start the development server: npm run dev
 ## Deployment
    - Frontend
-      Deploy the Next.js frontend using AWS Amplify or any preferred hosting service:
-    - amplify init
-    - amplify publish
-   - Backend
-      Deploy the backend to an AWS EC2 instance.
-      Use AWS API Gateway to expose backend endpoints.
-   - Database
+   - Deploy the Next.js frontend using AWS Amplify  hosting service:
+   - amplify init
+   - amplify publish
+   - Backend:
+     - Deploy the backend to an AWS EC2 instance.
+     - Use AWS API Gateway to expose backend endpoints.
+   - Database:
       Use AWS RDS for production-ready PostgreSQL hosting.
 ## Usage
 - Visit the deployed application in your browser.
@@ -75,6 +75,7 @@ An advanced, feature-rich Inventory Management Web Application built with a mode
 - Katkoe Teko
 - Patrick Nikiema
 - Uladzimir Lahvinovich
+## Contacts
 
 
 
