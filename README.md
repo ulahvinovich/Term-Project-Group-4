@@ -46,21 +46,21 @@ An advanced, feature-rich Inventory Management Web Application built with a mode
    - cd Term-Project-Group-4
    - Install dependencies: npm install
    - Set up the environment variables
-         - Create .env files for both the server and frontend
-           - Server .env
-              - DATABASE_URL=postgresql://username:password@aws-rds-endpoint:5432/database_name
-              - AWS_ACCESS_KEY_ID=your-access-key
-              - AWS_SECRET_ACCESS_KEY=your-secret-key
-              - AWS_REGION=your-region
-           - Client .env.local
-               - NEXT_PUBLIC_API_BASE_URL=https://your-api-gateway-endpoint
+   - Create .env files for both the server and frontend
+   - Server .env
+   - DATABASE_URL=postgresql://username:password@aws-rds-endpoint:5432/database_name
+   - AWS_ACCESS_KEY_ID=your-access-key
+   - AWS_SECRET_ACCESS_KEY=your-secret-key
+   - AWS_REGION=your-region
+   - Client .env.local
+   - NEXT_PUBLIC_API_BASE_URL=https://your-api-gateway-endpoint
    - Initialize Prisma: prisma migrate dev --name init
    - Start the development server: npm run dev
 ## Deployment
    - Frontend
       Deploy the Next.js frontend using AWS Amplify or any preferred hosting service:
-        amplify init
-        amplify publish
+    - amplify init
+    - amplify publish
    - Backend
       Deploy the backend to an AWS EC2 instance.
       Use AWS API Gateway to expose backend endpoints.
