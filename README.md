@@ -20,7 +20,7 @@ An advanced, feature-rich Inventory Management Web Application built with a mode
 - Cloud Hosting: Scalable backend and database hosted on AWS EC2 and AWS RDS.
 - File Uploads: Upload inventory-related documents and images using AWS S3.
 ## Tech Stack
-### Frontend:
+### Frontend
 - Next.js: React-based framework for server-side rendering and static site generation.
 - Tailwind CSS: Utility-first CSS framework for rapid UI development.
 - Redux Toolkit: State management with simplified configurations.
@@ -41,30 +41,30 @@ An advanced, feature-rich Inventory Management Web Application built with a mode
 - PostgreSQL Database (or AWS RDS instance)
 - AWS Account for cloud services
 - Prisma CLI : npm install -g prisma
-### Installation:
+### Installation
    - Clone the repository: git clone https://github.com/your-username/Term-Project-Group-4.git
    - cd Term-Project-Group-4
    - Install dependencies: npm install
-   - Set up the environment variables:
-         - Create .env files for both the server and frontend:
-           - Server .env:
+   - Set up the environment variables
+         - Create .env files for both the server and frontend
+           - Server .env
               - DATABASE_URL=postgresql://username:password@aws-rds-endpoint:5432/database_name
               - AWS_ACCESS_KEY_ID=your-access-key
               - AWS_SECRET_ACCESS_KEY=your-secret-key
               - AWS_REGION=your-region
-           - Client .env.local:
+           - Client .env.local
                - NEXT_PUBLIC_API_BASE_URL=https://your-api-gateway-endpoint
    - Initialize Prisma: prisma migrate dev --name init
    - Start the development server: npm run dev
 ## Deployment
-   - Frontend:
+   - Frontend
       Deploy the Next.js frontend using AWS Amplify or any preferred hosting service:
         amplify init
         amplify publish
-   - Backend:
+   - Backend
       Deploy the backend to an AWS EC2 instance.
       Use AWS API Gateway to expose backend endpoints.
-   - Database:
+   - Database
       Use AWS RDS for production-ready PostgreSQL hosting.
 ## Usage
 - Visit the deployed application in your browser.
