@@ -1,13 +1,12 @@
 [![Tutorial Video](https://img.youtube.com/vi/ddKQ8sZo_v8/0.jpg)](https://www.youtube.com/watch?v=ddKQ8sZo_v8)
 
-# Inventory Management Web App
+# Inventory Management App
 ## Table of Contents
 - [Overview](#overview)
 - [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
+- [Contributors](#contributing)
 - [Contact](#contact)
 ## Overview
 An advanced, feature-rich Inventory Management Web Application built with a modern tech stack to manage, organize, and monitor inventory efficiently. This application leverages Next.js for the frontend and Node.js for the backend, with seamless integrations for storage, APIs, and cloud hosting.
@@ -69,7 +68,14 @@ An advanced, feature-rich Inventory Management Web Application built with a mode
 ## Usage
 - Visit the deployed application in your browser.
 - Log in as an admin to manage inventory or as a user to track items.
-- Add, update, delete, and search inventory items using the Material UI Data Grid interface.     
+- Add, update, delete, and search inventory items using the Material UI Data Grid interface. 
+##  Contributors
+- Mike Henke
+- Benjamin Amoussou
+- Katkoe Teko
+- Patrick Nikiema
+- Uladzimir Lahvinovich
+
 
 
 
