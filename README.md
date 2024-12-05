@@ -57,9 +57,9 @@ An advanced, feature-rich Inventory Management Web Application built with a mode
    - Start the development server: npm run dev
 ## Deployment
    - Frontend
-   - Deploy the Next.js frontend using AWS Amplify  hosting service:
-     - amplify init
-     - amplify publish
+     - Deploy the Next.js frontend using AWS Amplify  hosting service:
+       - amplify init
+       - amplify publish
    - Backend:
      - Deploy the backend to an AWS EC2 instance.
      - Use AWS API Gateway to expose backend endpoints.
