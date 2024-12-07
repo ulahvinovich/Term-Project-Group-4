@@ -46,7 +46,6 @@ An advanced, feature-rich Inventory Management Web Application built with a mode
    - Install dependencies: 
    <div>
   <pre><code id="copy-command">npm install</code></pre>
-  <button onclick="copyToClipboard()">Copy</button>
 </div>
 
    - Set up the environment variables
