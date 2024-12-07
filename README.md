@@ -49,14 +49,6 @@ An advanced, feature-rich Inventory Management Web Application built with a mode
   <button onclick="copyToClipboard()">Copy</button>
 </div>
 
-<script>
-  function copyToClipboard() {
-    const text = document.getElementById('copy-command').innerText;
-    navigator.clipboard.writeText(text).then(() => {
-      alert('Copied to clipboard!');
-    });
-  }
-</script>
    - Set up the environment variables
    - Create .env files for both the server and frontend
    - Server ".env":
