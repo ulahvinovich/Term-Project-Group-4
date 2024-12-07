@@ -43,7 +43,20 @@ An advanced, feature-rich Inventory Management Web Application built with a mode
 ### Installation
    - Clone the repository: git clone https://github.com/your-username/Term-Project-Group-4.git
    - cd Term-Project-Group-4
-   - Install dependencies: npm install
+   - Install dependencies: 
+   <div>
+  <pre><code id="copy-command">npm install</code></pre>
+  <button onclick="copyToClipboard()">Copy</button>
+</div>
+
+<script>
+  function copyToClipboard() {
+    const text = document.getElementById('copy-command').innerText;
+    navigator.clipboard.writeText(text).then(() => {
+      alert('Copied to clipboard!');
+    });
+  }
+</script>
    - Set up the environment variables
    - Create .env files for both the server and frontend
    - Server ".env":
