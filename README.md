@@ -55,8 +55,10 @@ An advanced, feature-rich Inventory Management Web Application built with a mode
    - AWS_REGION=your-region
    - Client ".env.local":
    - NEXT_PUBLIC_API_BASE_URL=https://your-api-gateway-endpoint
-   - Initialize Prisma: prisma migrate dev --name init
-   - Start the development server: npm run dev
+   - Initialize Prisma: 
+ <pre><code id="copy-command">prisma migrate dev --name init</code></pre>
+   - Start the development server: 
+  <pre><code id="copy-command">npm run dev</code></pre>
 ## Deployment
    - Frontend
      - Deploy the Next.js frontend using AWS Amplify  hosting service:
