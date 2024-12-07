@@ -39,15 +39,13 @@ An advanced, feature-rich Inventory Management Web Application built with a mode
 - Node.js (>=16.0.0)
 - PostgreSQL Database (or AWS RDS instance)
 - AWS Account for cloud services
-- Prisma CLI : npm install -g prisma
+- Prisma CLI : 
+<pre><code id="copy-command">npm install -g prisma</code></pre>
 ### Installation
    - Clone the repository: git clone https://github.com/your-username/Term-Project-Group-4.git
    - cd Term-Project-Group-4
    - Install dependencies: 
-   <div>
   <pre><code id="copy-command">npm install</code></pre>
-</div>
-
    - Set up the environment variables
    - Create .env files for both the server and frontend
    - Server ".env":
