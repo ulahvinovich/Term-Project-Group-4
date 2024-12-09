@@ -53,9 +53,8 @@ An advanced, feature-rich Inventory Management Web Application built with a mode
 - Install Node.js
 <pre><code id="copy-command">
 sudo su -curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
-<EC2-public-IP></code></pre
+<EC2-public-IP></code></pre>
 - Activate nvm by typing the following at the command line
-
 <pre><code id="copy-command">. ~/.nvm/nvm.sh</code></pre>
 - Use nvm to install the latest version of Node.js 
 <pre><code id="copy-command">nvm install node</code></pre>
@@ -75,12 +74,12 @@ npm -v
  git — version
  </code></pre>
  - Clone the repository: git clone https://github.com/your-username/Term-Project-Group-4.git
+### Install dependencies
 - Get inside the directory 
 <pre><code id="copy-commands">
 cd Term-Project-Group-4
 cd server
 </code></pre>
-### Install dependencies
 - Install Packages
  <pre><code id="copy-command">npm install</code></pre>
   - Start the application 
@@ -95,13 +94,20 @@ cd server
    pm2 status
    pm2 delete all
    </code></pre>
+   - Get inside the directory 
+<pre><code id="copy-commands">
+cd Term-Project-Group-4
+cd client
+</code></pre>
+- Install Dependencies for  Next.js
+<pre><code id="copy-command">npm install</code></pre>
    ### Set Up AWS RDS for the Database
    - Create an RDS Instance
    - Choose a database engine -PostgreSQL
    - Configure Database Credentials:Save the database endpoint, username, and password
    - Update Prisma Configuration:Edit the prisma/schema.prisma file to include your RDS database  
    <pre><code id="copy-commands">
-sudo su –ls
+sudo su -ls
 cd Term-Project-Group-4
 cd server
 </code></pre>
