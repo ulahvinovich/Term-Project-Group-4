@@ -55,6 +55,7 @@ An advanced, feature-rich Inventory Management Web Application built with a mode
 sudo su -curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
 <EC2-public-IP></code></pre
 - Activate nvm by typing the following at the command line
+
 <pre><code id="copy-command">. ~/.nvm/nvm.sh</code></pre>
 - Use nvm to install the latest version of Node.js 
 <pre><code id="copy-command">nvm install node</code></pre>
@@ -74,15 +75,16 @@ npm -v
  git — version
  </code></pre>
  - Clone the repository: git clone https://github.com/your-username/Term-Project-Group-4.git
-- Get inside the directory and Install Packages
+- Get inside the directory 
 <pre><code id="copy-commands">
 cd Term-Project-Group-4
 cd server
 </code></pre>
+### Install dependencies
+- Install Packages
+ <pre><code id="copy-command">npm install</code></pre>
   - Start the application 
-  <pre><code id="copy-command">npm run dev</code></pre>
-   - Install dependencies: 
-  <pre><code id="copy-command">npm install</code></pre>
+  <pre><code id="copy-command">npm run dev</code></pre>   
    - Set up the environment variables
    - Create .env files for both the server and client
    <pre><code id="copy-command">echo “PORT=80” >.env</code></pre>
