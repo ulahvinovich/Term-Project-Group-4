@@ -5,7 +5,6 @@
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contributors](#contributing)
-- [Contacts](#contact)
 ## Overview
 An advanced, feature-rich Inventory Management Web Application built with a modern tech stack to manage, organize, and monitor inventory efficiently. This application leverages Next.js for the frontend and Node.js for the backend, with seamless integrations for storage, APIs, and cloud hosting.
 
@@ -34,18 +33,18 @@ An advanced, feature-rich Inventory Management Web Application built with a mode
 - AWS S3: Cloud storage for file uploads and static assets.
 ## Setup Instructions
 ### Prerequisites:
-- Node.js (>=16.0.0)
-- PostgreSQL Database (or AWS RDS instance)
+- Node.js (>=20.0.0)
+- PostgreSQL Database in AWS RDS instance
 - AWS Account for cloud services
 - Prisma CLI 
 ## Installation
- -Create AWS account
- ###Using AWS console to deploy APP
- -Create VPC, Subnet-public, Subnet-private
- -Create an Internet Gateway
- -An Internet Gateway (IGW) is attached to the VPC.
- -Create public and private route tables in AWS
-###Set Up AWS EC2 for Backend Hosting
+ - Create AWS account
+ ### Using AWS console to deploy APP
+ - Create VPC, Subnet-public, Subnet-private
+ - Create an Internet Gateway
+ - An Internet Gateway (IGW) is attached to the VPC.
+ - Create public and private route tables in AWS
+### Set Up AWS EC2 for Backend Hosting
 - Launch an EC2 Instance
 - Select an Amazon Linux  for Node.js support
 - Configure security groups:Open ports 22 (SSH), 80 (HTTP), and 443 (HTTPS)
@@ -54,7 +53,7 @@ An advanced, feature-rich Inventory Management Web Application built with a mode
 - Install Node.js
 <pre><code id="copy-command">
 sudo su -curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
-<EC2-public-IP>. ~/.nvm/nvm.sh</code></pre
+<EC2-public-IP></code></pre
 - Activate nvm by typing the following at the command line
 <pre><code id="copy-command">. ~/.nvm/nvm.sh</code></pre>
 - Use nvm to install the latest version of Node.js 
@@ -87,20 +86,20 @@ cd server
    - Set up the environment variables
    - Create .env files for both the server and client
    <pre><code id="copy-command">echo “PORT=80” >.env</code></pre>
-   - install PM2 to manage and keep Node.js applications running
+   - Install PM2 to manage and keep Node.js applications running
    <pre><code id="copy-commands">
    npm i pm2 -g
    pm2 start ecosystem.config.js
    pm2 status
    pm2 delete all
    </code></pre>
-   ###Set Up AWS RDS for the Database
+   ### Set Up AWS RDS for the Database
    - Create an RDS Instance
    - Choose a database engine -PostgreSQL
    - Configure Database Credentials:Save the database endpoint, username, and password
    - Update Prisma Configuration:Edit the prisma/schema.prisma file to include your RDS database  
    <pre><code id="copy-commands">
-   sudo su –ls
+sudo su –ls
 cd Term-Project-Group-4
 cd server
 </code></pre>
@@ -109,9 +108,9 @@ cd server
    - Push Prisma Schema
 <pre><code id="copy-command">npx prisma migrate dev --name init</code></pre>
 - Start an EC2 instance in consol :Set instance to connect
--  seed instance
+- Seed instance
 <pre><code id="copy-command">npm run seed </code></pre>
--check data
+- Check data
 <pre><code id="copy-command">
 pm2 start ecosystem.config.js
 pm2 monit  - for  monitor data 
@@ -149,9 +148,9 @@ pm2 monit  - for  monitor data
          -  Connect your Git repository 
          - Choose the  main branch to deploy
          - Configure Amplify Environment Variables:
-            - Add NEXT_PUBLIC_API_BASE_URL pointing to your API Gateway
-             -Add NEXT_PUBLIC_AWS_S3_BUCKET_NAME and NEXT_PUBLIC_AWS_REGION for S3 integration
-       - amplify publish
+             - Add NEXT_PUBLIC_API_BASE_URL pointing to your API Gateway
+             - Add NEXT_PUBLIC_AWS_S3_BUCKET_NAME and NEXT_PUBLIC_AWS_REGION for S3 integration
+       - Amplify publish
    - Backend:
      - Deploy the backend to an AWS EC2 instance.
      - Use AWS API Gateway to expose backend endpoints.
@@ -167,7 +166,7 @@ pm2 monit  - for  monitor data
 - Katkoe Teko
 - Patrick Nikiema
 - Uladzimir Lahvinovich
-## Contacts
+
 
 
 
